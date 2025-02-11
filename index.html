@@ -166,8 +166,8 @@
     </p>
     <p>
       <strong>Место:</strong><br>
-      Екатеринбург, Карла Либкнехта, 3
-      </p>Дворец бракосочетания, Лазурный зал
+      Екатеринбург, Карла Либкнехта, 3<br>
+      Дворец бракосочетания, Лазурный зал
     </p>
 
     <!-- Ссылка на карту и кнопка "Программа мероприятия" -->
@@ -240,7 +240,7 @@
     // Обратный отсчёт до свадьбы (18 апреля 2025)
     function startCountdown() {
       const countdownElem = document.getElementById('countdown');
-      const weddingDate = new Date('2025-04-18T00:00:00');
+      const weddingDate = new Date('2025-04-18T15:00:00+05:00');
 
       function updateCountdown() {
         const now = new Date();
@@ -337,7 +337,7 @@
     }
 
     // Запуск нового залпа каждые 300 мс
-    setInterval(createFirework, 500);
+    setInterval(createFirework, 300);
   </script>
 </body>
 </html>
