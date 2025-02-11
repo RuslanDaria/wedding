@@ -158,16 +158,16 @@
     <!-- Дата, Время, Место -->
     <p>
       <strong>Дата:</strong><br>
-      8 августа 2025 года
+      18 апреля 2025 года
     </p>
     <p>
-      <strong>Время:</strong><br>
-      14:30
+      <strong>Начало регистрации:</strong><br>
+      15:00
     </p>
     <p>
       <strong>Место:</strong><br>
       Екатеринбург, Карла Либкнехта, 3
-      Дворец бракосочетания, Лазурный зал
+      </p>Дворец бракосочетания, Лазурный зал
     </p>
 
     <!-- Ссылка на карту и кнопка "Программа мероприятия" -->
@@ -175,12 +175,12 @@
     <br>
     <button class="btn" onclick="toggleSchedule()">Программа мероприятия</button>
     <div id="schedule" class="schedule">
-      <p><strong>14:30</strong> - сбор гостей у ЗАГСа</p>
+      <p><strong>14:45</strong> - сбор гостей в ЗАГСе</p>
       <p><strong>15:00</strong> - регистрация</p>
       <p><strong>15:15 - 16:00</strong> - праздничный фуршет</p>
     </div>
 
-    <p>С любовью, Иван и Ольга ❤️</p>
+    <p>С любовью, Руслан и Дарья ❤️</p>
     <p id="countdown"></p>
   </div>
 
@@ -237,17 +237,17 @@
         : 'none';
     }
 
-    // Обратный отсчёт до свадьбы (8 августа 2025)
+    // Обратный отсчёт до свадьбы (18 апреля 2025)
     function startCountdown() {
       const countdownElem = document.getElementById('countdown');
-      const weddingDate = new Date('2025-08-08T00:00:00');
+      const weddingDate = new Date('2025-04-18T00:00:00');
 
       function updateCountdown() {
         const now = new Date();
         const diff = weddingDate - now;
 
         if (diff <= 0) {
-          // Если свадьба уже наступила или дата прошла
+          
           countdownElem.textContent = 'Свадьба уже началась! Поздравляем!';
           return;
         }
@@ -336,7 +336,7 @@
       ctx.globalAlpha = 1;
     }
 
-    // Запуск нового залпа каждые 500 мс
+    // Запуск нового залпа каждые 300 мс
     setInterval(createFirework, 500);
   </script>
 </body>
